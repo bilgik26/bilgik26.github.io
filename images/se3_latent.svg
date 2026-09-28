@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" font-family="Lato, Helvetica, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/>
+    </marker>
+  </defs>
+
+  <rect width="400" height="400" fill="#ffffff"/>
+
+  <!-- physical space: non-commuting square -->
+  <text x="20" y="34" font-size="22" fill="#333">SE(3) actions</text>
+  <circle cx="70" cy="160" r="9" fill="#333"/>
+  <!-- a1 then a2 -->
+  <path d="M78 156 L180 96" stroke="#1772d0" stroke-width="5" fill="none" marker-end="url(#ah)"/>
+  <path d="M188 94 C230 82 262 96 282 116" stroke="#e0485c" stroke-width="5" fill="none" marker-end="url(#ah)"/>
+  <!-- a2 then a1 -->
+  <path d="M78 166 C110 200 150 212 178 206" stroke="#e0485c" stroke-width="5" fill="none" marker-end="url(#ah)"/>
+  <path d="M188 204 L282 162" stroke="#1772d0" stroke-width="5" fill="none" marker-end="url(#ah)"/>
+  <circle cx="290" cy="122" r="8" fill="#333"/>
+  <circle cx="290" cy="158" r="8" fill="#333"/>
+  <path d="M312 122 L312 158" stroke="#333" stroke-width="2.5"/>
+  <path d="M306 122 L318 122 M306 158 L318 158" stroke="#333" stroke-width="2.5"/>
+  <text x="324" y="146" font-size="22" fill="#333" font-style="italic">[ξ₁,ξ₂]</text>
+  <text x="112" y="100" font-size="20" fill="#1772d0" font-style="italic">a₁</text>
+  <text x="222" y="78" font-size="20" fill="#e0485c" font-style="italic">a₂</text>
+
+  <!-- mapping arrow -->
+  <path d="M200 232 L200 262" stroke="#999" stroke-width="3" stroke-dasharray="6 5" fill="none" marker-end="url(#ah)"/>
+
+  <!-- latent: DiT layers, each one probed -->
+  <text x="20" y="296" font-size="22" fill="#333">policy latent (DiT blocks)</text>
+  <g>
+    <rect x="20" y="312" width="360" height="40" rx="6" fill="#d9dde3"/>
+    <g stroke="#ffffff" stroke-width="2">
+      <line x1="66" y1="312" x2="66" y2="352"/><line x1="112" y1="312" x2="112" y2="352"/>
+      <line x1="158" y1="312" x2="158" y2="352"/><line x1="204" y1="312" x2="204" y2="352"/>
+      <line x1="250" y1="312" x2="250" y2="352"/><line x1="296" y1="312" x2="296" y2="352"/>
+      <line x1="342" y1="312" x2="342" y2="352"/>
+    </g>
+    <g fill="#1772d0">
+      <circle cx="43" cy="366" r="4"/><circle cx="89" cy="366" r="4"/><circle cx="135" cy="366" r="4"/>
+      <circle cx="181" cy="366" r="4"/><circle cx="227" cy="366" r="4"/><circle cx="273" cy="366" r="4"/>
+      <circle cx="319" cy="366" r="4"/><circle cx="361" cy="366" r="4"/>
+    </g>
+  </g>
+  <text x="200" y="392" font-size="16" fill="#777" text-anchor="middle">probe every layer</text>
+</svg>

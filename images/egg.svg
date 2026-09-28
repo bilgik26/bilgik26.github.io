@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#fff6d8"/>
+      <stop offset="100%" stop-color="#ffd9a8"/>
+    </radialGradient>
+    <radialGradient id="shell" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#fbf3e6"/>
+      <stop offset="100%" stop-color="#ecdcc4"/>
+    </radialGradient>
+    <radialGradient id="iris" cx="50%" cy="60%" r="60%">
+      <stop offset="0%" stop-color="#6fb8ff"/>
+      <stop offset="60%" stop-color="#2f6fd6"/>
+      <stop offset="100%" stop-color="#1b3a86"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- sparkles -->
+  <g fill="#ffffff" opacity="0.9">
+    <path d="M70 90 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z"/>
+    <path d="M330 70 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4z"/>
+    <path d="M340 300 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5z"/>
+  </g>
+
+  <!-- shadow -->
+  <ellipse cx="200" cy="358" rx="105" ry="16" fill="#d9a86b" opacity="0.45"/>
+
+  <!-- egg body -->
+  <path d="M200 48 C120 48 78 170 78 238 C78 310 134 352 200 352 C266 352 322 310 322 238 C322 170 280 48 200 48 Z"
+        fill="url(#shell)" stroke="#5a4636" stroke-width="5"/>
+
+  <!-- ahoge (hair tuft) -->
+  <path d="M198 50 C188 22 214 12 222 26 C208 24 204 36 206 50" fill="none" stroke="#5a4636" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- shell highlight -->
+  <path d="M130 130 C140 100 160 84 178 78" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- eyes -->
+  <g stroke="#2b2118" stroke-width="4">
+    <ellipse cx="158" cy="226" rx="24" ry="32" fill="url(#iris)"/>
+    <ellipse cx="242" cy="226" rx="24" ry="32" fill="url(#iris)"/>
+  </g>
+  <ellipse cx="158" cy="232" rx="10" ry="14" fill="#10204a"/>
+  <ellipse cx="242" cy="232" rx="10" ry="14" fill="#10204a"/>
+  <circle cx="149" cy="212" r="9" fill="#ffffff"/>
+  <circle cx="233" cy="212" r="9" fill="#ffffff"/>
+  <circle cx="166" cy="244" r="4" fill="#ffffff"/>
+  <circle cx="250" cy="244" r="4" fill="#ffffff"/>
+  <!-- lashes -->
+  <path d="M130 204 C140 188 172 186 184 200" fill="none" stroke="#2b2118" stroke-width="6" stroke-linecap="round"/>
+  <path d="M216 200 C228 186 260 188 270 204" fill="none" stroke="#2b2118" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- blush -->
+  <ellipse cx="128" cy="276" rx="20" ry="10" fill="#ff8fa3" opacity="0.55"/>
+  <ellipse cx="272" cy="276" rx="20" ry="10" fill="#ff8fa3" opacity="0.55"/>
+  <g stroke="#ff6f8a" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+    <line x1="118" y1="272" x2="124" y2="280"/><line x1="128" y1="272" x2="134" y2="280"/>
+    <line x1="266" y1="272" x2="272" y2="280"/><line x1="276" y1="272" x2="282" y2="280"/>
+  </g>
+
+  <!-- mouth -->
+  <path d="M186 280 C192 294 208 294 214 280 Z" fill="#c9485b" stroke="#2b2118" stroke-width="3.5" stroke-linejoin="round"/>
+</svg>
